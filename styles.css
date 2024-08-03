@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#textInput {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#generateButton, #downloadButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#imageContainer {
+    margin-top: 20px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #ccc;
+}
+
+#generatedText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* 设置文字颜色为黑色 */
+    font-size: 4rem; /* 调整字体大小 */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* 为了对比度添加白色阴影 */
+    word-wrap: break-word;
+    width: 90%; /* 文字宽度占满图片 */
+    text-align: center;
+    white-space: pre-wrap; /* 保持换行符 */
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}

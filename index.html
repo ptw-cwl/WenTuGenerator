@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文图生成器-WenTu Generator</title>
+    <meta name="description" content="生成文字背景图片">
+    <meta name="keywords" content="ptw-cwl,图片生成">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="textInput" placeholder="输入文字（最多10个字符）">
+        <button id="generateButton">生成图片</button>
+        <button id="downloadButton" style="display: none;">下载图片</button>
+        <div id="imageContainer"></div>
+        <div id="errorContainer" class="error"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
